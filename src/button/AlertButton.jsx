@@ -1,24 +1,20 @@
 import { useState } from "react";
 
 export default function AlertButton({ text, message }) {
-  const [isChanged, setIsChanged] = useState(false);
+  const [output, setOutput] = useState("data bisa berubah");
 
   function handleClick() {
-    if (isChanged === false) {
-      setIsChanged(true);
+    if (output === "data bisa berubah") {
+      setOutput(message);
     } else {
-      setIsChanged(false);
+      setOutput("data bisa berubah");
     }
   }
 
   return (
     <>
       <button onClick={handleClick}>{text}</button>
-      <p>
-        {isChanged === true
-          ? message
-          : "data bisa berubah"}
-      </p>
+      <p>{output}</p>
     </>
   );
 }
