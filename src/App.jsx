@@ -1,11 +1,12 @@
 import Layout from "./layout/layout"; 
-
+import Button from "./button/AlertButton.jsx";
 function App() {
   return (
     <Layout>
-      <div>
+      <div >
         <h1>Welcome to the App</h1>
-        <p>This is the main content area.</p>
+        <Button text="Click me!" message="dahhhhhhhhhhhhhhhhhhhh" />
+        
       </div>
     </Layout>
   );
