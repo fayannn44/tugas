@@ -1,5 +1,7 @@
 import Layout from "./layout/layout"; 
 import Button from "./button/AlertButton.jsx";
+import StudentTable from "./submit/SubmitSiswa.jsx"; 
+
 function App() {
   return (
     <Layout>
@@ -8,6 +10,7 @@ function App() {
         <Button text="Click me!" message="dahhhhhhhhhhhhhhhhhhhh" />
         
       </div>
+      <StudentTable />
     </Layout>
   );
 }
