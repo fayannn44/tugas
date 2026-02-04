@@ -15,7 +15,7 @@ export default function StudentTable() {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Nama siswa"
+          placeholder="tambah N ama siswa"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
