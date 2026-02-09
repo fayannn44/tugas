@@ -2,6 +2,7 @@ import Layout from "./layout/layout";
 import Button from "./button/AlertButton.jsx";
 import StudentTable from "./submit/SubmitSiswa.jsx"; 
 import Note from "./note/noteApp.jsx"; 
+import StudentApp from "./student/StudentApp.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <StudentTable />
       <Note />
+      <StudentApp />
     </Layout>
   );
 }
